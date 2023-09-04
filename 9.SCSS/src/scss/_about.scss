@@ -1,0 +1,17 @@
+.about{
+    color: green;
+}
+
+
+
+
+.aboutbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .box{
+        background-color: red;
+        width: 40%;
+        height: 200px;
+    }
+}

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+.first{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+.second{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: 7s;
+}
+
+
+.first:hover .second{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
+
+
+
+
+/*
+position: absolute;
+position: relative;
+position: fixed;
+position: sticky;
+position: static;
+*/
+
+
+
+/* .first:hover .second{
+    background-color: green;
+} */
+
+/* .second:hover{
+    background-color: yellow;
+} */
+
+/* 
+i{
+    font-size: 40px;
+    background-color: green;
+    color: white;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+} */
+
+
+
+
+/* h1::before{
+    content: "Hello";
+    color: red;
+} */
+
+
+h1 {
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 6px;
+    background-color: red;
+    transition: 1s;
+}
+
+
+h1:hover::before {
+    width: 90px;
+}
+
+
+a{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: white;
+    background-color: black;
+    border:2px solid red;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+a::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    background-color: red;
+    width: 100%;
+    transition: 0.7s;
+}
+
+
+a:hover::before{
+    height: 100%;
+}
