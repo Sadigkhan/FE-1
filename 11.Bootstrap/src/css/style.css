@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+#Header {
+  padding: 1rem 4rem;
+  background-color: #b5b5b5;
+  position: relative;
+}
+
+#Header .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Header .all .right .navbar-custom .navul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+#Header .all .right .navbar-custom .navul .nav-item-li:nth-child(1) {
+  position: relative;
+}
+
+#Header .all .right .navbar-custom .navul .nav-item-li:nth-child(1) .dropdown {
+  top: 100%;
+  left: 0;
+  width: 150px;
+  height: 0px;
+  background-color: red;
+  position: absolute;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: hidden;
+}
+
+#Header .all .right .navbar-custom .navul .nav-item-li:nth-child(1):hover .dropdown {
+  height: 200px;
+}
+
+#Header .all .right .navbar-custom .navul .nav-item-li:nth-child(2) .dropdown {
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: red;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#Header .all .right .navbar-custom .navul .nav-item-li:nth-child(2):hover .dropdown {
+  height: 200px;
+}
+/*# sourceMappingURL=style.css.map */
