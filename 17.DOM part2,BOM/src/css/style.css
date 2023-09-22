@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#Header {
+  position: relative;
+}
+
+#Header .container {
+  padding: 0 3rem;
+}
+
+#Header .container .all {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Header .container .all .left .logo-div {
+  width: 100px;
+}
+
+#Header .container .all .left .logo-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#Header .container .all .right .menu-icon-btn {
+  background: 0;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#Header .container .all .right .menu-icon-btn i {
+  font-size: 26px;
+}
+
+#Header .container .all .dropdown {
+  width: 100%;
+  position: absolute;
+  background-color: gainsboro;
+  top: 100%;
+  left: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#Header .container .all .dropdown .nav-ul {
+  list-style: none;
+}
+
+#Header .container .all .dropdown .nav-ul .dropdown-item .top {
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Header .container .all .dropdown .nav-ul .dropdown-item .top span {
+  font-size: 26px;
+}
+
+#Header .container .all .dropdown .nav-ul .dropdown-item .top i {
+  font-size: 22px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#Header .container .all .dropdown .nav-ul .dropdown-item .top i.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#Header .container .all .dropdown .nav-ul .dropdown-item .bottom {
+  height: 0px;
+  background-color: antiquewhite;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#Header .container .all .dropdown .nav-ul .dropdown-item .bottom .inner-ul {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+
+#Header .container .all .dropdown .nav-ul .dropdown-item .bottom .inner-ul .inner-menu-item a {
+  font-size: 20px;
+  color: #000;
+}
+
+#Header .container .all .dropdown .nav-ul .dropdown-item .bottom.active {
+  height: 121px !important;
+}
+
+#Header .container .all .dropdown.active {
+  left: 0 !important;
+}
+/*# sourceMappingURL=style.css.map */
