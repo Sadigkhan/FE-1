@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* .first{
+    width: 500px;
+    background-color: red;
+    padding: 20px;
+    border: 10px solid;
+    margin-bottom:10px ;
+} */
+
+/* first total width 560px */
+
+
+/* .second{
+    width: 500px;
+    background-color: blue;
+    padding: 20px;
+    border: 10px solid;
+    box-sizing: border-box;
+} */
+
+/* second total width 500px */
+
+a{
+    text-decoration: none;
+}
+
+.header-all{
+    background-color: aqua;
+    padding: 20px;
+    overflow-y: hidden;
+}
+
+.logo{
+float: left;
+}
+
+.navbar{
+float: right;
+}
+
+.navbar a{
+    margin-right: 10px;
+}
+
+.box{
+    width: 30%;
+    float: left;
+    margin-left: 26px;
+    margin-top: 15px;
+}
+
+img{
+    width: 100%;
+}

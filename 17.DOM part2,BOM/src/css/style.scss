@@ -1,0 +1,128 @@
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+// img{
+//     width: 300px;
+//     height: 300px;
+// }
+
+// #red{
+//     width: 600px;
+//     height: 600px;
+//     background-color: red;
+
+//     > #yellow{
+//         width: 300px;
+//         height: 300px;
+//         background-color: yellow;
+
+//         > #green{
+//             width: 150px;
+//             height: 150px;
+//             background-color: green;
+//         }
+//     }
+// }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#Header{
+    position: relative;
+    .container{
+        padding: 0 3rem;
+        .all{
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left{
+                .logo-div{
+                    width: 100px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .right{
+                .menu-icon-btn{
+                    background: 0;
+                    border: 0;
+                    padding: 5px;
+                    cursor: pointer;
+                    i{
+                        font-size: 26px;
+                    }
+                }
+            }
+            .dropdown{
+                width: 100%;
+                position: absolute;
+                background-color: gainsboro;
+                top: 100%;
+                left: 100%;
+                transition: .5s;
+                .nav-ul{
+                    list-style: none;
+                    .dropdown-item{
+                        .top{
+                            padding: 1rem 2rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            span{
+                                font-size: 26px;
+                            }
+                            i{
+                                font-size: 22px;
+                                transition: .5s;
+                            }
+                            i.active{
+                                transform: rotate(180deg);
+                                
+                            }
+                        }
+                        .bottom{
+                            height: 0px;
+                            background-color: antiquewhite;
+                            overflow: hidden;
+                            transition: .5s;
+                            .inner-ul{
+                                list-style: none;
+                                padding: 1rem 3rem;
+                                .inner-menu-item{
+                                    a{
+                                        font-size: 20px;
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+                        .bottom.active{
+                            height: 121px !important;
+                        }
+                    }
+                }
+            }
+            .dropdown.active{
+                left: 0 !important;
+            }
+        }
+    }
+}
