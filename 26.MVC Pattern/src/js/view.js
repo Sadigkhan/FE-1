@@ -18,6 +18,8 @@ export default class View{
         }
     }
 
+
+ 
     refreshDisplay(value){
         this.display.value=value
     }
