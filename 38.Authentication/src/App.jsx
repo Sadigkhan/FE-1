@@ -12,11 +12,16 @@ import AuthLayout from "./layouts/auth/AuthLayout";
 import Login from "./layouts/auth/pages/Login";
 import ProtectedRoute from "./helpers/ProtectedRoute";
 import { AuthProvider } from "./contexts/authContext";
+import Register from "./layouts/auth/pages/Register";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout />,
+    element: (
+      <ProtectedRoute>
+        <MainLayout />
+      </ProtectedRoute>
+    ),
     children: [
       {
         path: "/",
@@ -39,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login />,
+      },
+      {
+        path: "register",
+        element: <Register />,
       },
     ],
   },
